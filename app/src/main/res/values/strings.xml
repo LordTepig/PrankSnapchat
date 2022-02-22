@@ -2,4 +2,7 @@
     <string name="app_name">PrankSnapchat</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="username">username</string>
+    <string name="dot">•</string>
+    <string name="starting_time">0m</string>
 </resources>
