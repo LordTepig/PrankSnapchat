@@ -16,6 +16,14 @@ class MainFragment : Fragment() {
         _binding = FragmentMainBinding.inflate(inflater, container, false)
         val rootView = binding.root
 
+        val snaps = listOf(Snap("Jake M", 1680, R.drawable.bitmojimaleone, false),
+            Snap("The Thor", 7200, R.drawable.bitmojimaletwo, false),
+            Snap("Rose Mary", 86440, R.drawable.bitmojirosemary, false),
+            Snap("Heather G", 5, R.drawable.bitmojifemaletwo, false) )
+
+        val mAdapter = SnapAdapter(snaps)
+
+
         return rootView
     }
 }

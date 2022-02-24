@@ -5,7 +5,7 @@ import android.graphics.Color
 data class Snap
     (val username: String,
      val time: Int,
-     val senderPFPResourceID : String,
+     val senderPFPResourceID : Int,
      val opened: Boolean)
     {
         val status: String
@@ -17,13 +17,13 @@ data class Snap
                 "New Snap"
             }
 
-        val iconStatusResourceID: String
+        val iconStatusResourceID: Int
         get() =
             if(opened){
-                "@drawable/receivedSnapIcon.png"
+                R.drawable.receivedsnapicon
             }
             else{
-                "@drawable/newSnapIcon.png"
+                R.drawable.newSnapIcon
             }
 
         val textColorStatus: Int
