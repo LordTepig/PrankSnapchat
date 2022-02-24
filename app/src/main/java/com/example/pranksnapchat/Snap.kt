@@ -23,7 +23,7 @@ data class Snap
                 R.drawable.receivedsnapicon
             }
             else{
-                R.drawable.newSnapIcon
+                R.drawable.newsnapicon
             }
 
         val textColorStatus: Int

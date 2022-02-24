@@ -1,5 +1,6 @@
 package com.example.pranksnapchat
 
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pranksnapchat.databinding.ListItemLayoutBinding
 
@@ -11,6 +12,7 @@ class SnapViewHolder (val binding: ListItemLayoutBinding):
     init{
         binding.root.setOnClickListener{
             setSnapStatus(currentSnap)
+            binding.root.findNavController().navigate(R.id.action_mainFragment_to_prankSnapFragment)
         }
     }
 
