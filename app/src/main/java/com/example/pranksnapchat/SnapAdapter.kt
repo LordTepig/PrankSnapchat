@@ -12,9 +12,9 @@ class SnapAdapter(val snapList: List<Snap>): RecyclerView.Adapter<SnapViewHolder
             return SnapViewHolder(binding)
         }
 
-        override fun onBindViewHolder(holder: SnapViewHolder, position: Int) {
+        override fun onBindViewHolder(currentSnapHolder: SnapViewHolder, position: Int) {
             val currentSnap = snapList[position]
-            holder.bindSnap(currentSnap)
+            currentSnapHolder.bindSnap(currentSnap)
         }
 
         override fun getItemCount(): Int {
