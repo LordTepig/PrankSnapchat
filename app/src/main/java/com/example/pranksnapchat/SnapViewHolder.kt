@@ -13,6 +13,7 @@ class SnapViewHolder (val binding: ListItemLayoutBinding):
         binding.root.setOnClickListener{
             setSnapStatus(currentSnap)
             binding.root.findNavController().navigate(R.id.action_mainFragment_to_prankSnapFragment)
+            currentSnap.opened = true
         }
     }
 
@@ -27,6 +28,8 @@ class SnapViewHolder (val binding: ListItemLayoutBinding):
         binding.statusIconImageView.setImageResource(currentSnap.iconStatusResourceID)
         binding.statusTextView.text = currentSnap.status
         binding.timeSinceSentTextView.text = "${currentSnap.time}m"
+
+
     }
 
 }

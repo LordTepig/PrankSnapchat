@@ -6,7 +6,7 @@ data class Snap
     (val username: String,
      val time: Int,
      val senderPFPResourceID : Int,
-     val opened: Boolean)
+     var opened: Boolean)
     {
         val status: String
         get() =
